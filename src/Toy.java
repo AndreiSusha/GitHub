@@ -3,7 +3,8 @@ public class Toy {
 
 	public static void main(String[] args) {
 		
-		
+		ToyV car = new ToyV("Volvo", 3000);
+		car.printData();
 		
 		
 	}
@@ -11,30 +12,28 @@ public class Toy {
 }
 
 
-class ToyW 
+class ToyV 
 {
 	
 	public String name;
 	public int weight;
 	
-	public ToyW() {
+	public ToyV() {
 		
 		this.name = " ";
 		this.weight = 0;
-		printData();
 		
 	}
 		
-	public ToyW (String name, int weight) {
+	public ToyV (String name, int weight) {
 		this.name = name;
-		this.weight = weight;	
-		printData();
+		this.weight = weight;
 		
 	}
 	
-	public printData() {
+	public void printData() {
 		System.out.println("Brand: " + name);
-		System.out.println("Weright: " + weight);
+		System.out.println("Weight: " + weight);
 	}
 	
 }
