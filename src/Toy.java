@@ -5,8 +5,8 @@ public class Toy {
 		
 		ToyV car = new ToyV("Volvo", 3000);
 		car.printData();
-		
-		
+		Specifications car1 = new Specifications("Black", 90);
+		car1.printData();
 	}
 
 }
@@ -36,4 +36,18 @@ class ToyV
 		System.out.println("Weight: " + weight);
 	}
 	
+}
+class Specifications extends ToyV {
+	public String color;
+	public int model;
+	
+	public Specifications (String color, int model) {
+		this.color = color;
+		this.model = model;
+	}
+	
+	public void printData() {
+		System.out.println("Color: " + color);
+		System.out.println("Model: EX" + model);
+	}
 }
